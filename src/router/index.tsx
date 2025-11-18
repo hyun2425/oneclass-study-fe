@@ -10,19 +10,8 @@ import More from "../pages/More/More";
 import { ErrorBoundary } from "../components/ErrorBoundary";
 
 // GitHub Pages 배포를 위한 base path
-// 동적으로 감지하여 설정
-const getBasename = () => {
-  if (import.meta.env.DEV) return '/';
-  
-  // 프로덕션 환경에서 현재 경로를 기반으로 basename 결정
-  const pathname = window.location.pathname;
-  if (pathname.startsWith('/oneclass-study-fe')) {
-    return '/oneclass-study-fe';
-  }
-  return '/';
-};
-
-const basename = getBasename();
+// 프로덕션 환경에서만 basename 설정
+const basename = import.meta.env.PROD ? '/oneclass-study-fe' : '/';
 
 export const router = createBrowserRouter([
   { 
