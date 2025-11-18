@@ -2,8 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // GitHub Pages 배포를 위한 base path 설정
-// 리포지토리 이름에 맞게 수정하세요 (예: /onclass-study-fe/)
-const repositoryName = 'onclass-study-fe'
+// 리포지토리 이름에 맞게 수정하세요 (예: /oneclass-study-fe/)
+const repositoryName = 'oneclass-study-fe'
 
 // https://vite.dev/config/
 export default defineConfig({

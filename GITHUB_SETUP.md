@@ -14,7 +14,7 @@
 1. GitHub 웹사이트에 로그인
 2. 우측 상단의 **+** 버튼 클릭 → **New repository** 선택
 3. 리포지토리 정보 입력:
-   - **Repository name**: `onclass-study-fe` (또는 원하는 이름)
+   - **Repository name**: `oneclass-study-fe` (또는 원하는 이름)
    - **Description**: (선택사항) 프로젝트 설명
    - **Public** 또는 **Private** 선택
    - ⚠️ **중요**: "Initialize this repository with a README" 체크하지 않기
@@ -41,11 +41,11 @@ git commit -m "Initial commit: React + Vite 프로젝트"
 ### 4단계: GitHub 리포지토리 연결
 
 GitHub에서 생성한 리포지토리의 URL을 확인하세요:
-- 예: `https://github.com/[사용자명]/onclass-study-fe.git`
+- 예: `https://github.com/[사용자명]/oneclass-study-fe.git`
 
 ```bash
 # 원격 저장소 추가 (URL을 실제 리포지토리 URL로 변경)
-git remote add origin https://github.com/[사용자명]/onclass-study-fe.git
+git remote add origin https://github.com/[사용자명]/oneclass-study-fe.git
 
 # 원격 저장소 확인
 git remote -v

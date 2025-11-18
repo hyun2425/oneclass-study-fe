@@ -22,10 +22,10 @@
 
 #### 2단계: 리포지토리 이름 확인 및 수정
 
-1. 리포지토리 이름을 확인하세요 (예: `onclass-study-fe`)
+1. 리포지토리 이름을 확인하세요 (예: `oneclass-study-fe`)
 2. `vite.config.ts` 파일에서 `repositoryName` 변수를 확인/수정:
    ```typescript
-   const repositoryName = 'onclass-study-fe'  // 여기를 리포지토리 이름으로 수정
+   const repositoryName = 'oneclass-study-fe'  // 여기를 리포지토리 이름으로 수정
    ```
 
 #### 3단계: 코드 푸시
@@ -41,7 +41,7 @@ git push origin main
 1. GitHub 리포지토리의 **Actions** 탭으로 이동
 2. 워크플로우가 실행되는지 확인
 3. 완료되면 **Settings** → **Pages**에서 배포된 URL 확인
-   - 예: `https://[사용자명].github.io/onclass-study-fe/`
+   - 예: `https://hyun2425.github.io/oneclass-study-fe/`
 
 ### 방법 2: gh-pages 패키지 사용 (수동 배포)
 
