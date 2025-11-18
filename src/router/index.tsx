@@ -8,6 +8,9 @@ import CreateGroup from "../pages/CreateGroup/CreateGroup";
 import Certify from "../pages/Certify/Certify";
 import More from "../pages/More/More";
 
+// GitHub Pages 배포를 위한 base path
+const basename = import.meta.env.PROD ? '/oneclass-study-fe' : '/';
+
 export const router = createBrowserRouter([
   { path: "/", element: <Onboarding /> },
   { path: "/select-type", element: <SelectType /> },
@@ -17,4 +20,6 @@ export const router = createBrowserRouter([
   { path: "/create-group", element: <CreateGroup /> },
   { path: "/certify", element: <Certify /> },
   { path: "/more", element: <More /> },
-]);
+], {
+  basename: basename,
+});
