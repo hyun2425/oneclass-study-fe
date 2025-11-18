@@ -1,12 +1,25 @@
 import { useNavigate } from "react-router-dom";
 
+type SettingItem = {
+  label: string;
+  icon: string;
+  hasArrow?: boolean;
+  hasToggle?: boolean;
+  value?: string;
+};
+
+type SettingsSection = {
+  title: string;
+  items: SettingItem[];
+};
+
 const tabs = [
   { key: "home", label: "홈", sub: "" },
   { key: "group", label: "그룹", sub: "" },
   { key: "more", label: "더보기", sub: "" },
 ];
 
-const settingsSections = [
+const settingsSections: SettingsSection[] = [
   {
     title: "계정",
     items: [
